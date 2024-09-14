@@ -1,0 +1,17 @@
+.choice-button {
+  background-color: #4caf4f;
+  padding: 8px 15px;
+  color: #ffff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.choice-button:hover {
+  background-color: #3ae140;
+}
+
+.choice-button:active {
+  background-color: red;
+}

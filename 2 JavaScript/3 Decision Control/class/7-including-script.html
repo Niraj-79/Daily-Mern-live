@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Including Script</title>
+  </head>
+  <body>
+    <!-- inline JavaScript -->
+    <button onclick="alert('Hello')">Click me!</button>
+
+
+    <!-- Internal JavaScript -->
+    <script>
+      function showAlert() {
+        alert("Hello, world!");
+      }
+    </script>
+    <button onclick="showAlert()">Click me!</button>
+    
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
