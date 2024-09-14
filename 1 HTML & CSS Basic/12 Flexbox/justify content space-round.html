@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Justify Content space round</title>
+    <style>
+      #heading {
+        text-align: center;
+      }
+      .container {
+        height: 200px;
+        background-color: bisque;
+        border: 2px solid black;
+        border-radius: 5px;
+        
+        display: flex;
+        justify-content: space-around;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    #box1 { background-color: aqua;}
+    #box2 { background-color: blueviolet;}
+    #box3 { background-color: yellow;}
+    #box4 { background-color: tomato;}
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Justify Content space-round</h1>
+    <div class="container">
+      <div id="box1" class="box">flex Item 1</div>
+      <div id="box2" class="box">flex Item 2</div>
+      <div id="box3" class="box">flex item 3</div>
+      <div id="box4" class="box">flex item 4</div>
+    </div>
+  </body>
+</html>

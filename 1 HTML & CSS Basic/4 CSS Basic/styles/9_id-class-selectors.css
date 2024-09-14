@@ -1,0 +1,16 @@
+p {
+  color: green;
+}
+
+#para3 {
+  color: red;
+}
+
+.article {
+  color: black;
+}
+
+.code{
+  color: grey;
+  font-family: 'Courier New', Courier, monospace;
+}

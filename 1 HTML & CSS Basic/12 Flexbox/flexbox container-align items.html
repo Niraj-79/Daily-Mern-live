@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Align Items</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #heading {
+      text-align: center;
+    }
+    .container {
+      height: 800px;
+      background-color: bisque;
+      border: 2px solid black;
+      border-radius: 5px;
+      margin: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      align-items: center;
+      /* align-items: start; */
+      /* align-items: end; */
+      /* align-items: stretch; */
+    }
+
+    .box {
+      height: 100px;
+      width: 100px;
+      border: 1px dotted black;
+      border-radius: 5px;
+      margin: 10px;
+    }
+        
+    #box1 { background-color: blueviolet;}
+    #box2 { background-color: brown;}
+    #box3 { background-color: cadetblue;}
+    #box4 { background-color: crimson;}
+  </style>
+  <body>
+    <h1 id="heading">Flexbox container Align Items</h1>
+    <div class="container">
+      <div id="box1" class="box">Flex Item 1</div>
+      <div id="box2" class="box">Flex Item 2</div>
+      <div id="box3" class="box">Flex Item 3</div>
+      <div id="box4" class="box">Flex Item 4</div>
+    </div>
+  </body>
+</html>

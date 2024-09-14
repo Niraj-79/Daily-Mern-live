@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Attribute Selector</title>
+    <style>
+      #heading {
+        text-align: center;
+      }
+      
+      /* .input-field {
+      }
+      .username {
+      }
+      .password {
+      } */
+
+      [type] {
+        border-radius: 5px;
+      }
+      [placeholder="Enter your password"] {
+        margin: 10px;
+      }
+      [placeholder] {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Learning Attribute selector</h1>
+    <input
+      type="text"
+      placeholder="Enter your name"
+      class="input-field username"
+    />
+    <br />
+    <input
+      type="password"
+      placeholder="Enter your password"
+      class="input-field password"
+    />
+    <br />
+    <input type="submit" value="Submit" />
+  </body>
+</html>

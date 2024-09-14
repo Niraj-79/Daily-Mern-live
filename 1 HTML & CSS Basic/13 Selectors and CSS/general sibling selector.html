@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>General sibling selector</title>
+    <style>
+      /* Using general sibling selector to style all following siblings */
+      #heading {
+        text-align: center;
+      }
+      h1 ~ p {
+        color: blue;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Learning sibling selector</h1>
+    <p>
+      This paragraph will be blue and italic because it is a sibling of the h1.
+    </p>
+    <p>
+      this paragraph will also be blue and italic because it is a sibling of the
+      h1.
+    </p>
+  </body>
+</html>

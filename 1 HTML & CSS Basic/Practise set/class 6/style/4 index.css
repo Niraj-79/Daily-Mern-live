@@ -1,0 +1,6 @@
+.container-1 {
+  height: 500px;
+  width: 500px;
+  background: url(../Image/baby.jpg) no-repeat content-box;
+  background-size: contain;
+}

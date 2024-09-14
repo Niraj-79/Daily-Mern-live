@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Different media types</title>
+  </head>
+  <style>
+    .screen-only {
+      background-color: lightblue;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .print-only {
+      display: none;
+    }
+    @media pring {
+      .screen-only {
+        display: none;
+      }
+      .print-only {
+        display: block;
+        background-color: lightgrey;
+        padding: 20px;
+        border-radius: 5px;
+      }
+    }
+  </style>
+  <body>
+    <div class="screen-only">This content is visible only on screens.</div>
+    <div class="print-only">This content is visible only when printed.</div>
+    <p>
+      Resize the browser window or print this page to see the changes in styles.
+    </p>
+  </body>
+</html>

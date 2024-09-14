@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Order</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #heading {
+      text-align: center;
+    }
+    #container {
+      background-color: aqua;
+      border: 1px solid black;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+    }
+    .box {
+      height: 100px;
+      width: 100px;
+      border: 1px solid black;
+      border-radius: 5px;
+      margin: 5px;
+      padding: 5px;
+      flex-grow: 1;
+    }
+
+    #box1 {
+      background-color: coral;
+      order: 4;
+    }
+    #box2 {
+      background-color: darkolivegreen;
+      order: 3;
+    }
+    #box3 {
+      background-color: darkorange;
+      order: 1;
+    }
+    #box4 {
+      background-color: gold;
+      order: 2;
+    }
+  </style>
+  <body>
+    <h1 id="heading">Learning Order</h1>
+    <div id="container">
+      <div id="box1" class="box">Flex Item 1</div>
+      <div id="box2" class="box">Flex item 2</div>
+      <div id="box3" class="box">Flex Item 3</div>
+      <div id="box4" class="box">Flex item 4</div>
+    </div>
+  </body>
+</html>

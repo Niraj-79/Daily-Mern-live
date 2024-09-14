@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Align Self</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #heading { text-align: center;}
+  #container { 
+    height: 800px;
+    background-color: bisque;
+    border: 1px dotted black;
+    border-radius: 5px; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+
+  .box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  #box1 { background-color: blueviolet;}
+  #box2 { background-color: brown;}
+  #box4 { background-color: tomato;}
+  
+  #box3 {
+     background-color: yellowgreen;
+     align-self: center;
+    }
+
+</style>
+<body>
+  <h1 id="heading">Learning Align Self all value</h1>
+  <div id="container">
+    <div id="box1" class="box">Flex Item 1</div>
+    <div id="box2" class="box">Flex Item 2</div>
+    <div id="box3" class="box">Flex Item 3</div>
+    <div id="box4" class="box">flex Item 4</div>
+  </div>
+</body>
+</html>

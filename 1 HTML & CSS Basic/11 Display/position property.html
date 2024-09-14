@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Learning Position Property</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    div {
+      height: 70px;
+      width: 70px;
+      background-color: red;
+      border: 5px solid black;
+      margin: 20px;
+    }
+
+    #box1 {
+      position: static;
+    }
+
+    #box2 {
+      position: relative;
+      top: 20px;
+      left: 90px;
+    }
+
+    #box3 {
+      position: fixed;
+      top: 20px;
+      left: 90px;
+    }
+
+    #box4 {
+      position: absolute;
+      top: 600px;
+      left: 200px;
+    }
+  </style>
+  <body>
+    <h3>Learning Position Property</h3>
+    <div id="box1">Static</div>
+    <div id="box2">Relative</div>
+    <div id="box3">Fixed</div>
+    <div id="box4">Absolute</div> 
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grid row/column star/end</title>
+  </head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-rows: 100px 100px 100px;
+      grid-template-columns: 100px 100px 100px;
+      gap: 10px;
+    }
+    .grid-item {
+      background-color: lightcoral;
+      border: 1px solid #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.2em;
+    }
+    .item1 {
+      grid-row-start: 1;
+      /* Spans from row line 1 to row line 3 */
+      grid-row-end: 3;
+      grid-column-start: 1;
+      /* spans from column line 1 to column line 4 */
+      grid-column-end: 4;
+    }
+    .item2 {
+      grid-row-start: 2;
+      /* Spans row line 2 to row line 4 */
+      grid-row-end: 4;
+      grid-column-start: 2;
+      /* Spans from column line 2 to column line 3 */
+      grid-column-end: 3;
+    }
+  </style>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item item1">1</div>
+      <div class="grid-item item2">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div>
+  </body>
+</html>

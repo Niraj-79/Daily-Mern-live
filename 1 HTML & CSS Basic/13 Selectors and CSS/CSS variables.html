@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Css Variables</title>
+</head>
+<style>
+   html {
+    --main-bg-color: #3498ab;
+    --main-text-color: #ffffff;
+    --secondary-bg-color: #2ecc71;
+    --secondary-text-color: #ffffff;
+    --padding: 10px;
+    --border-radius: 5px;
+   }
+
+   body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: var(--padding);
+   }
+
+   .card {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    margin: var(--padding) 0;
+   }
+
+   .fallback-example {
+    /* use falback color */
+    color: var(--undefined-variable, #ff6347);
+   }
+
+</style>
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>This is an exmple of using CSS variables to manage colors and spacing.</p>
+
+  <div class="card">
+    <h2>Card Title</h2>
+    <p>This card use CSS variables for styling.</p>
+  </div>
+
+  <p class="fallback-example">This text uses a fallback value for an undefined variable.</p>
+</body>
+</html>

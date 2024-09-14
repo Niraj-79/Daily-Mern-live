@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pseudo Classes Example</title>
+  </head>
+  <style>
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+    a:hover {
+      color: red;
+    }
+    a:active {
+      color: green;
+    }
+    input {
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      outline: none; /* Remove default focus outline */
+    }
+    input:focus {
+      border-color: orange;
+      box-shadow: 0 0 5px orange;
+    }
+    ul li:first-child {
+      background-color: lightgray;
+    }
+  </style>
+  <body>
+    <h2 class="heading">Anchor Pseudo-Classes</h2>
+    <a href="#">Hover over me!</a> <br />
+    <br /><br />
+    <a href="#">Click me!</a>
+
+    <h2 class="heading">Focus Pseudo-Class</h2>
+    <input type="text" placeholder="Click of focus" />
+
+    <h2 class="heading">Child Pseudo-Class</h2>
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+    </ul>
+  </body>
+</html>

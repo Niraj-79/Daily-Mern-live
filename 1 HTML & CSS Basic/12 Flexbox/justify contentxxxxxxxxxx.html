@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Justify Content</title>
+</head>
+<style>
+  /* all style  */
+  .container {
+    height: 200px;
+    background-color: bisque;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+  }
+.box {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  margin: 5px;  
+}
+#heading { text-align: center;}
+.color1 { background-color: aqua;}
+.color2 { background-color: blueviolet;}
+.color3 { background-color: yellow;}
+.color4 { background-color: tomato;}
+
+/* justify content start */
+.flex_start { justify-content: center; }
+
+/* justify content end */
+.flex_end { justify-content: end; }
+
+/* justify content center */
+
+</style>
+<body>
+  <!-- start -->
+  <h1 id="heading">flex start</h1>
+  <div class="container" class="flex_start">
+    <div class="box color1">Flex Item 1</div>
+    <div class="box color2">Flex Item 2</div>
+    <div class="box color3">Flex Item 3</div>
+    <div class="box color4">Flex Item 4</div>
+  </div><hr>  
+
+  <!-- flex-end -->
+   <h1 id="heading">flex-end</h1>
+   <div class="container" class="flex_end">
+      <div class="box color1">Flex item 5</div>
+      <div class="box color2">Flex Item 6</div>
+      <div class="box color3">Flex Item 7</div>
+      <div class="box color4">Flex Item 8</div>
+  </div> <hr>
+
+    <!-- center -->
+     <h1 id="heading">center</h1>
+    <div class="container" class="flex_center">
+      <div class="box color1">Flex Item 9</div>
+      <div class="box color2">Flex Item 10</div>      
+      <div class="box color3">Flex Item 11</div>
+      <div class="box color4">Flex Item 12</div>
+    </div> 
+
+
+  <a href=""></a>
+
+
+
+
+    
+
+</body>
+</html>

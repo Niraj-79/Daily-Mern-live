@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Align Content</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #heading {
+      text-align: center;
+    }
+    #container {
+      height: 800px;
+      background-color: aqua;
+      border: 2px dashed black;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      /* aligh items all value */
+
+      
+      align-content: center;
+      /* 
+      align-content: start;
+      align-content: end; 
+      align-content: space-around;
+      align-content: space-between;
+      align-content: space-evenly; */
+    }
+
+    .box {
+      height: 100px;
+      width: 100px;
+      border: 1px solid black;
+      margin: 5px;
+      border-radius: 5px;
+      background-color: coral;
+    }
+    
+    #box1 { background-color: red;}
+    #box2 { background-color: blueviolet;}
+    #box3 { background-color: brown;}
+    #box4 { background-color: burlywood;}
+    #box5 { background-color: cadetblue;}
+  </style>
+  <body>
+    <h1 id="heading">Align Content</h1>
+    <div id="container">
+      <div id="box1" class="box">Flex Item 1</div>
+      <div id="box2" class="box">Flex Item 2</div>
+      <div id="box3" class="box">Flex Item 3</div>
+      <div id="box4" class="box">Flex Item 4</div>
+      <div id="box5" class="box">Flex Item 5</div>
+      <div id="box6" class="box">Flex Item 6</div>
+      <div id="box7" class="box">Flex Item 7</div>
+      <div id="box8" class="box">Flex Item 8</div>
+      <div id="box8" class="box">Flex Item 9</div>
+    </div>
+  </body>
+</html>

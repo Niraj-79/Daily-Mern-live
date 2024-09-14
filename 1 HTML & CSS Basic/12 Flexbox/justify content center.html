@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Justify Content Center</title>
+  </head>
+  <style>
+    #heading {
+      text-align: center;
+    }
+    .contaienr {
+      height: 200px;
+      background-color: beige;
+      border: 2px solid black;
+      border-radius: 5px;
+      /*  Please Update justify conten and check output*/ 
+      display: flex;
+      justify-content: center;
+    }
+
+    .box {
+      height: 100px;
+      width: 100px;
+      border: 1px solid black;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    #box1 { background-color: aqua;}
+    #box2 { background-color: blueviolet;}
+    #box3 { background-color: yellow;}
+    #box4 { background-color: tomato;}
+  </style>
+  <body>
+    <h1 id="heading">Justify Content Center</h1>
+    <div class="contaienr">
+      <div id="box1" class="box">flex Item 1</div>
+      <div id="box2" class="box">flex Item 2</div>
+      <div id="box3" class="box">flex Item 3</div>
+      <div id="box4" class="box">flex Item 4</div>
+    </div>
+  </body>
+</html>

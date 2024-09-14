@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flex Shrink</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #heading {
+      text-align: center;
+    }
+    #container {
+      background-color: aqua;
+      border: 5px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+    }
+    .box {
+      height: 200px;
+      width: 200px;
+      margin: 5px;
+      border: 1px dotted black;
+      border-radius: 10px;
+      padding: 5px;
+      font-size: 20px;
+      color: black;
+    }
+    #box1 { background-color: blueviolet;}
+    #box2 { background-color: brown;}
+
+    #box3 {
+      background-color: chartreuse;
+      flex-shrink: 4;    
+    }
+    #box4 { 
+      background-color: crimson;
+      flex-shrink: 0;
+    }
+  </style>
+  <body>
+    <h1 id="heading">Learning Flex Shrink</h1>
+    <div id="container">
+      <div id="box1" class="box">Flex Item 1</div>
+      <div id="box2" class="box">Flex Item 2</div>
+      <div id="box3" class="box">Flex Item 3</div>
+      <div id="box4" class="box">Flex Item 4</div>
+    </div>
+  </body>
+</html>

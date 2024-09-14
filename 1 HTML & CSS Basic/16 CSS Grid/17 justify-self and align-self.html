@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Justify-self & Align-self</title>
+  </head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-rows: 200px 200px;
+      grid-template-columns: 200px 200px;
+      gap: 10px;
+      justify-items: center; /* Centers all items horizontally by default */
+      justify-items: center; /* Centers all items vertically by default */
+    }
+    .grid-item {
+      background-color: lightcoral;
+      border: 1px solid #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.2em;
+    }
+    .item1 {
+      justify-self: start; /* Aligns item 1 to the start horizontally */
+      align-self: start; /* Aligns item 1 to the start vertically */
+    }
+    .item2 {
+      justify-self: end; /* Aligns item 2 to the end horizontally */
+      align-self: end; /* Align item 2 to the end vertically */
+    }
+    .item3 {
+      justify-self: center; /* Aligns item 3 to the center horizontally */
+      align-self: center; /* Aligns item 3 to the center vertically */
+    }
+    .item4 {
+      justify-self: stretch; /* Aligns item 4 to the streach horizontally */
+      align-self: stretch; /* Aligns item 4 to the streach vertically */
+    }
+  </style>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item item1">1</div>
+      <div class="grid-item item2">2</div>
+      <div class="grid-item item3">3</div>
+      <div class="grid-item item4">4</div>
+    </div>
+  </body>
+</html>

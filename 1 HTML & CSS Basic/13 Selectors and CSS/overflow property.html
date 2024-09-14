@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Overflow Property</title>
+    <style>
+      .container {
+        width: 240px;
+        height: 120px;
+        border: 1px solid black;
+        margin-bottom: 50px;
+        border-radius: 5px;
+      }
+      .visible {
+        overflow: visible;
+        background-color: lightcoral;
+      }
+      .hidden {
+        overflow: hidden;
+        background-color: lightgreen;
+      }
+      .scroll {
+        overflow: scroll;
+        background-color: lightblue;
+      }
+      .auto {
+        overflow: auto;
+        background-color: lightyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Learning Overflow Property</h1>
+    <div class="container visible">
+      This is a div with overflow: visible. Content can overflow out of this
+      box. <br /><br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam
+      doloribus aliquid voluptatem placeat expedita nisi aut natus! Repudiandae
+    </div>
+
+    <div class="container hidden">
+      This is a div with overflow: hidden. Content is clipped and will not be
+      visible outside the box.
+      <br />
+      <br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat
+      recusandae ipsa similique, hic exercitationem earum, blanditiis
+      accusantium esse velit tenetur deserunt molestias dicta quo?
+    </div>
+
+    <div class="container scroll">
+      This is a div with overflow: scroll. Scrollbars are added to see
+      overflowing content.
+      <br />
+      <br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+      cupiditate veniam asperiores rerum, quibusdam possimus placeat, corrupti
+      molestiae architecto distinctio hic repellendus similique nulla vero!
+    </div>
+
+    <div class="container auto">
+      This is a div with overflow: auto. Scrollbars appear only if necessary.
+      <br />
+      <br />
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, facilis
+      autem saepe numquam blanditiis doloremque dolores expedita hic, sunt
+      voluptatum harum? Iusto ex eveniet aliquid.
+    </div>
+  </body>
+</html>

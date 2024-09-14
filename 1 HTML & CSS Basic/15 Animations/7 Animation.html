@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Animation</title>
+  </head>
+  <style>
+    .box {
+      height: 100px;
+      width: 100px;      
+      border: 1px solid black;
+      border-radius: 5px;
+      position: absolute;
+      left: 10px;
+      background-color: lime;
+      padding: 5px;
+      
+      animation-name: ghumakkad;
+      animation-duration: 4s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0s;
+      animation-iteration-count: 4;
+      animation-direction: alternate;
+    }
+
+    @keyframes ghumakkad {
+        0% { left: 10px; top: 0px;}
+        50% { left: 150px; top: 100px;}
+        100% { left: 300px; top: 0px;}
+    }
+
+    /* @keyframes ghumakkad {
+        0% {left: 10%; top: 0%;}
+        50% { left: 50%; top: 75%;}
+        100% { left: 90%; top: 0%;}
+    } */
+  </style>
+  <body>
+    <div class="box">Animation</div>
+  </body>
+</html>

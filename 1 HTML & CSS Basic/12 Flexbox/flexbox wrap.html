@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>flexbox wrap</title>
+  </head>
+  <style>
+    #heading {
+      text-align: center;
+    }
+    .container { 
+        height: 250px;
+        padding: 10px;
+        margin: 20px;
+        background-color: darkgray;
+        border: 3px double black;
+
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+    .box {
+        height: 75px;
+        width: 75px;
+        margin: 5px;
+        padding: 2px;
+        border: 1px dotted black;
+        border-radius: 5px;
+    }
+    #box1 { background-color: blue;}
+    #box2 { background-color: chartreuse;}
+    #box3 { background-color: darkgreen;}
+    #box4 { background-color: darkorange;}
+    #box5 { background-color: coral;}
+    #box6 { background-color: green;}
+    #box7 { background-color: orangered;}
+    #box8 { background-color: goldenrod;}
+  </style>
+  <body>
+    <h1 id="heading">flexbox wrap</h1>
+    <div class="container">
+      <div id="box1" class="box">flex Item 1</div>
+      <div id="box2" class="box">flex Item 2</div>
+      <div id="box3" class="box">flex Item 3</div>
+      <div id="box4" class="box">flex Item 4</div>
+      <div id="box5" class="box">flex Item 5</div>
+      <div id="box6" class="box">flex Item 6</div>
+      <div id="box7" class="box">flex Item 7</div>
+      <div id="box8" class="box">flex Item 8</div> 
+    </div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+/* Question no */
+.my-heading {
+  color: red;
+}
+
+/* Question no 2*/
+#heading  {
+  font-family: cursive;
+}
+
+/* Question no 3*/
+/* this is comment heading and paragaraph */
+.comment {
+  font-style: italic;
+}
+.para {
+  font-family: cursive;
+}
+
+/* Question no 4*/
+#new-div {
+  color: chocolate;
+}
+p {
+  font-style: italic;  
+}
+.small-heading {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Question no 5 */
+#parrot, #cow {
+  color: tomato;
+}

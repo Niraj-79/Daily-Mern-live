@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flexbox Direction</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      height: 100px;
+      width: 100px;
+      border: 3px solid black;
+      margin: 10px;
+    }
+
+    #heading { margin-left: 200px;}
+
+    #container {
+      width: 600px;
+      height: 800px;
+      padding: 10px;
+      margin: 20px;
+      border: 3px solid black;
+      background-color: burlywood;
+
+      /* only flex-direction ka value change hua hai */
+      display: flex;
+      flex-direction: column;
+    }
+
+    #box1 { background-color: aqua;}
+    #box2 { background-color: blueviolet;}
+    #box3 { background-color: yellow;}
+    #box4 { background-color: tomato;}
+  </style>
+  <body>
+    <h1 id="heading">Flex Column</h1>
+    <div id="container">
+      <div id="box1" class="box">Flex Item 1</div>
+      <div id="box2" class="box">Flex Item 2</div>
+      <div id="box3" class="box">Flex Item 3</div>
+      <div id="box4" class="box">Flex Item 4</div>
+    </div>
+  </body>
+</html>
