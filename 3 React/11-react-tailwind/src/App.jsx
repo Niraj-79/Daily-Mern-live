@@ -4,7 +4,7 @@ import Education from "./components/Education";
 import Extracurricular from "./components/Extracurricular";
 import Header from "./components/Header";
 import Hobbies from "./components/Hobbies";
-import Projects from "./components/Projects";
+import Projects from "./components/project/Projects";
 import Skills from "./components/Skills";
 
 function App() {
