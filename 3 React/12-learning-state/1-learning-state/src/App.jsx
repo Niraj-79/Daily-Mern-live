@@ -1,6 +1,8 @@
 import List from "./components/List";
 
 function App() {
+
+
   const studentArr = ["Niraj", "Rohan", "Mohan", "Sanjay", "Kamal", "Anuj"];
   console.log("Came to paint App component");
   console.log(studentArr);
