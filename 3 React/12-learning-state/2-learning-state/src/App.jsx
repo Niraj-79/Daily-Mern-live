@@ -1,9 +1,16 @@
+import { useState } from "react";
 import List from "./components/List";
 
 function App() {
+  
+  console.log("Painting App Component");
 
+  const [studentArr, setStudentArr] = useState(["Rohan","Mohan","Sanjay", "Kamal","Anuj",]);
 
-  const studentArr = ["Niraj", "Rohan", "Mohan", "Sanjay", "Kamal", "Anuj"];
+  // const studentArr = studentArrState[0];
+  // const setStudentArr = studentArrState[1];
+  console.log("State Value is:", studentArr);
+
   console.log("Came to paint App component");
   console.log(studentArr);
 
@@ -14,7 +21,13 @@ function App() {
 
     if (event.key === "Enter") {
       console.log(event.target.value);
-      studentArr.push(event.target.value);
+      // studentArr.push(event.target.value);
+      //const newArr = [event.target.value];
+      //const newArr = [event.target.value, ...studentArr];
+      const newArr = [...studentArr, event.target.value];
+      event.target.value = "";
+
+      setStudentArr(newArr);
       console.log(studentArr);
     }
   };
