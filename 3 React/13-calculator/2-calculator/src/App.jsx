@@ -3,6 +3,7 @@ import Display from "./components/Display";
 import NumberPad from "./components/NumberPad";
 
 function App() {
+  console.log("Repainting App");
   const [displayalVal, setDisplayVal] = useState(0);
 
   return (

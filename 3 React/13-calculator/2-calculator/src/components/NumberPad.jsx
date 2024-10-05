@@ -17,7 +17,7 @@ const NumberPad = ({ displayVal, setDisplayVal }) => {
 
   return (
     <>
-      <Button text="c" onClickHandler={() => setDisplayVal("")} />
+      <Button text="C" onClickHandler={() => setDisplayVal("")} />
       <br />
       {buttons.map((text) => (
         <Button key={text} text={text} onClickHandler={() => addToDisplay(text)} />
