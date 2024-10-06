@@ -28,4 +28,3 @@ const StateVsRef = () => {
 };
 
 export default StateVsRef;
-
