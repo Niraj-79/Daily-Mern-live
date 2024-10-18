@@ -54,7 +54,6 @@ const requestHandler = (req, res) => {
   res.end();
 };
 
-
 // -------------------------------------------------------------------------------------------------
 //// 1st way
 // http.createServer(requestHandler);
