@@ -11,6 +11,7 @@
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}\\5 NodeJs and ExpressJs\\4 npm and tools\\Errors and Debugging\\app.js",
       "restart": true,
+      // "runtimeExecutable": "node",
       "runtimeExecutable": "nodemoon",
       "console": "integratedTerminal"
     }
