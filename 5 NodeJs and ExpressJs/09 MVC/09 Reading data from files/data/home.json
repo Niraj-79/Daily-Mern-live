@@ -1,0 +1,51 @@
+[
+  {
+    "houseName": "First Home",
+    "price": "1399",
+    "location": "Goa",
+    "rating": "5",
+    "photoUrl": "/images/house1.png"
+  },
+  {
+    "houseName": "Second Home",
+    "price": "1499",
+    "location": "Delhi",
+    "rating": "3",
+    "photoUrl": "/images/house2.png"
+  },
+  {
+    "houseName": "Fourth Home",
+    "price": "1599",
+    "location": "Chandigarh",
+    "rating": "2.5",
+    "photoUrl": "/images/house4.png"
+  },
+  {
+    "houseName": "Five Home",
+    "price": "1699",
+    "location": "Punjab",
+    "rating": "3.5",
+    "photoUrl": "/images/house5.png"
+  },
+  {
+    "houseName": "Sixth Home",
+    "price": "1799",
+    "location": "Mohali",
+    "rating": "4.5",
+    "photoUrl": "/images/house6.png"
+  },
+  {
+    "houseName": "Seventh Home",
+    "price": "1899",
+    "location": "Haryana",
+    "rating": "5",
+    "photoUrl": "/images/house7.png"
+  },
+  {
+    "houseName": "Eight Home",
+    "price": "1999",
+    "location": "Sector-8",
+    "rating": "5",
+    "photoUrl": "/images/house6.png"
+  }
+]
