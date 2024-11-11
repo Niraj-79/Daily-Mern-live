@@ -3,7 +3,7 @@ const mongodb = require("mongodb");
 const MongoClient = mongodb.MongoClient;
 
 const url =
-  "mongodb+srv://Niraj079:Niraj@2003@airbnb.gmw0o.mongodb.net/?retryWrites=true&w=majority&appName=Airbnb";
+  "mongodb+srv://root:root@airbnb.xqq4y.mongodb.net/?retryWrites=true&w=majority&appName=Airbnb";
 
 const mongoConnect = (callback) => {
   MongoClient.connect(url)

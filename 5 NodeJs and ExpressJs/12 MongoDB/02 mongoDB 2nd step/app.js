@@ -10,6 +10,7 @@ const { hostRouter } = require("./routers/hostRouter");
 const storeRouter = require("./routers/storeRouter");
 const rootDir = require("./util/path-util");
 const errorController = require("./controllers/errorController");
+const { mongoConnect } = require("./util/database-utils");
 
 const app = express();
 app.set("view engine", "ejs");
@@ -22,7 +23,6 @@ app.use(storeRouter);
 
 app.use(errorController.get404);
 
-const mongoConnect = require("./util/database-utils");
 const PORT = 3000;
 mongoConnect(() => {
   app.listen(PORT, () => {
