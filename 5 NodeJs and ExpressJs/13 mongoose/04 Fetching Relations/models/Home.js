@@ -9,18 +9,33 @@ const homeSchema = new mongoose.Schema({
   description: String,
 });
 
-homeSchema.pre("findOneAndDelete", async function (next) {
-  const Favourite = require("./Favourite");
-  const homeId = this.getQuery()["_id"];
-  // console.log(homeId);
-  try {
-    await Favourite.deleteOne({ homeId });
-    // console.log("Deleted Successfully");
-    next();
-  } catch (err) {
-    // console.log("Error while deleting Favourite", err);
-    next(err);
-  }
-});
+//// first method
+  homeSchema.pre('findOneAndDelete', function(next) {
+    const homeId = this.getQuery()["_id"];
+    console.log(homeId);
+    Favourite.deleteOne({homeId}).then(() => {
+      console.log("Deleted Successfully");
+      next();
+    }).catch(err => {
+      console.log("Error while deleting Favourite", err);
+    })
+  })
+
+
+
+//// second method 
+// homeSchema.pre("findOneAndDelete", async function (next) {
+//   const Favourite = require("./Favourite");
+//   const homeId = this.getQuery()["_id"];
+//   // console.log(homeId);
+//   try {
+//     await Favourite.deleteOne({ homeId });
+//     // console.log("Deleted Successfully");
+//     next();
+//   } catch (err) {
+//     // console.log("Error while deleting Favourite", err);
+//     next(err);
+//   }
+// });
 
 module.exports = mongoose.model("Home", homeSchema);
