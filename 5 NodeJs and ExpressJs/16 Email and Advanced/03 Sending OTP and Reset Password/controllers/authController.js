@@ -78,7 +78,6 @@ exports.postResetPassword = [
       await user.save();
 
       res.redirect("/login");
-
     } catch (err) {
       console.log(err);
       res.render("/auth/reset_password", {

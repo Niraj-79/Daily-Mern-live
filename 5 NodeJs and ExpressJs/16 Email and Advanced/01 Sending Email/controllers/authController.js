@@ -2,7 +2,7 @@ const { check, validationResult } = require("express-validator");
 const User = require("../models/User");
 const bcrypt = require("bcryptjs");
 const sendGrid = require("@sendgrid/mail");
-const SEND_GRID_KEY = "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";
+const SEND_GRID_KEY = ""; // Add your key here
 sendGrid.setApiKey(SEND_GRID_KEY);
 
 exports.getLogin = (req, res, next) => {
