@@ -13,7 +13,6 @@ const LoadItems = () => {
     fetch("http://localhost:3000/todos")
       .then((res) => res.json())
       .then((items) => {
-        // console.log(items);
         const newItems = items.map(todoItemToClientModel);
         addAllTodoItems(newItems);
       })
@@ -23,16 +22,16 @@ const LoadItems = () => {
   }, []);
 
   return (
-    <>
+    <div className="max-w-3xl mx-auto px-4 py-6">
       {isLoading && (
-        <div className="text-center">
-          <div className="spinner-border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </div>
+        <div className="flex justify-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
         </div>
       )}
-      {!isLoading && todoItems.length === 0 && <p>Enjoy your day</p>}
-    </>
+      {!isLoading && todoItems.length === 0 && (
+        <p className="text-center text-gray-500 italic">Enjoy your day</p>
+      )}
+    </div>
   );
 };
 
